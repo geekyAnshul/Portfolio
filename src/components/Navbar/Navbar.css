@@ -1,0 +1,102 @@
+
+
+  .n-wrapper {
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+    top: 0;
+}
+
+.n-left {
+    flex: 1;
+    align-items: center;
+    justify-content: left;
+    display: flex;
+    gap: 2rem;
+}
+
+.n-name {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.n-right {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    font-weight: 400;
+    font-size: 1.3rem;
+}
+
+.n-list {
+    flex: 10;
+}
+
+.n-list > ul {
+    display: flex;
+    gap: 2rem;
+    margin-right: 4rem;
+}
+
+.n-list > ul :hover {
+    color: var(--orange);
+    cursor: pointer;
+}
+
+.n-button {
+    flex: 2;
+    font-size: 1rem;  /* Adjusted button font size */
+    padding: 0.5rem 1rem;  /* Adjusted button padding */
+}
+
+/* Responsive styles for smaller devices */
+@media screen and (max-width: 768px) {
+    .n-wrapper {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .n-left, .n-right {
+        justify-content: space-between;
+    }
+
+    .n-name {
+        font-size: 1.5rem;
+    }
+
+    .n-list {
+        display: none; /* Hides the navigation list */
+    }
+
+    .n-button {
+        font-size: 0.9rem;  /* Slightly smaller contact button */
+        padding: 0.4rem 0.8rem;  /* Adjusted padding for smaller screens */
+    }
+}
+
+/* Mobile (max-width: 480px) */
+@media screen and (max-width: 480px) {
+    .n-list {
+        display: none; /* Ensure the nav list is hidden on mobile */
+    }
+
+    .n-wrapper {
+        height: auto;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem;
+    }
+
+    .n-name {
+        font-size: 1.5rem;
+    }
+
+    .button,.n-button {
+       display: none;
+    }
+    
+}

@@ -1,0 +1,260 @@
+.Intro {
+    display: flex;
+    height: 77vh;
+    margin-top: 10rem;
+}
+
+/* left side styling */
+.i-left {
+    display: flex;
+    position: relative;
+    flex: 1;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.i-name {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+
+}
+
+.i-name > :nth-child(1) {
+    color: var(--black);
+    font-weight: bold;
+    font-size: 3rem;
+}
+
+.i-name > :nth-child(2) {
+    color: var(--orange);
+    font-weight: bold;
+    font-size: 4rem;
+}
+
+.i-name > :nth-child(3) {
+    font-weight: 200;
+    font-size: 15px;
+    color: var(--gray);
+    margin-top: 10px;
+}
+
+.i-button {
+    width: 8rem;
+    /* height: 2rem; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.i-icons {
+    margin-top: 3rem;
+    display: flex; 
+    gap: -20rem; 
+}
+
+.i-icons > * {
+    transform: scale(0.4);
+}
+
+.i-icons > *:hover {
+    cursor: pointer;
+}
+
+/* right side styling */
+.i-right {
+    flex: 1;
+    position: relative;
+}
+
+.i-right > * {
+    position: absolute;
+    z-index: 1;
+}
+
+.i-right > :nth-child(1) {
+    transform: scale(0.58);
+    left: -15%;
+    top: -45%; /* Adjust this value as needed to move upwards */
+}
+
+.i-right > :nth-child(2) {
+    top: -4.6rem;
+    transform: scale(0.67);
+    left: -3rem;
+}
+
+.i-right > :nth-child(3) {
+    transform: scale(1.4);
+    left: 28%;
+}
+
+.i-right > :nth-child(4) {
+    transform: scale(0.62);
+    top: -20%;
+    left: -24%;
+    border-radius: 50%;
+    padding: 0;
+}
+
+/* Custom class for boyimg */
+.boyimg {
+    position: absolute; /* Ensure the image is positioned absolutely */
+    top: -40px; /* Adjust this value to move it upwards */
+    left: 0; /* Position as needed */
+    transform: scale(0.5); /* Adjust the scale */
+    z-index: 1; /* Ensure it's above other elements */
+}
+
+/* blur */
+.blur {
+    position: absolute;
+    width: 22rem;
+    height: 14rem;
+    border-radius: 50%;
+    background: #edd0ff;
+    filter: blur(212px);
+    z-index: -9;
+    top: -18%;
+    left: 56%;
+    filter: blur(72px);
+}
+
+@media screen and (max-width: 480px) {
+    .Intro {
+        display: flex;
+        flex-direction: column;
+        
+        height: 77vh;
+        margin-top: 4rem;
+    }
+    
+    /* left side styling */
+    .i-left {
+        display: flex;
+        position: relative;
+        flex: 1;
+        flex-direction: column;
+        gap: 0px;
+       
+    }
+    
+    .i-name {
+        display: flex;
+        flex-direction: column;
+        gap: 0.15rem;
+    
+    }
+    
+    .i-name > :nth-child(1) {
+        color: var(--black);
+        font-weight: bold;
+        font-size: 2rem;
+    }
+    
+    .i-name > :nth-child(2) {
+        color: var(--orange);
+        font-weight: bold;
+        font-size: 2.5rem;
+    }
+    
+    .i-name > :nth-child(3) {
+        font-weight: 200;
+        font-size: 13px;
+        color: var(--gray);
+        margin-top: 8px;
+        width: 350px;
+    }
+    
+    
+    .i-icons {
+       display: none !important;;  
+    }
+    
+    
+    
+    /* right side styling */
+    .i-right {
+         flex: 2;
+        position: relative;
+        
+    }
+    
+    .i-right > * {
+        position: absolute;
+        z-index: 1;
+    }
+    
+    .i-right > :nth-child(1) {
+        transform: scale(0.3);
+        left: -70%;
+        top: -130%; /* Adjust this value as needed to move upwards */
+    }
+    
+    .i-right > :nth-child(2) {
+        top: -4.6rem;
+        transform: scale(0.3);
+        left: -2rem;
+        
+    }
+    
+    .i-right > :nth-child(3) {
+        transform: scale(0.5);
+        left: 2%;
+        
+    }
+    
+    .i-right > :nth-child(4) {
+        transform: scale(0.5);
+        position: absolute;
+        bottom: 80%;
+        left: -36%;
+        border-radius: 50%; 
+        
+    }
+    
+    /* Custom class for boyimg */
+    .boyimg {
+        position: absolute; /* Ensure the image is positioned absolutely */
+        top: -20px; /* Adjust this value to move it upwards */
+        left: 0; /* Position as needed */
+        transform: scale(0.5); /* Adjust the scale */
+        z-index: 1; /* Ensure it's above other elements */
+    }
+    
+    /* blur */
+    .blur {
+        position: absolute;
+        width: 22rem;
+        height: 14rem;
+        border-radius: 50%;
+        background: #edd0ff;
+        filter: blur(212px);
+        z-index: -9;
+        top: -18%;
+        left: 56%;
+        filter: blur(72px);
+    }
+}
+
+.emoji{
+    width: 200px;
+    height: 200px;
+}
+
+.floating-div img{
+    height: 100px;
+    width: 100px;
+   
+}
+.floating-div{
+    font-size: 20px;
+    
+}
+
+.i-icons img{
+    width: 140px;
+    height: 140px;
+    cursor: pointer;
+}
+

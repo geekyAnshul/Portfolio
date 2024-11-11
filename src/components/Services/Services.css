@@ -1,0 +1,129 @@
+
+
+
+.services {
+    padding: 0 3rem;
+    display: flex;
+    height: 30rem;
+    margin-bottom: 8rem;
+    margin-top: 5rem;
+    padding-top: 2rem;
+}
+
+/* left side */
+.awesome {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.awesome > :nth-child(1) {
+    color: var(--black);
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.awesome > :nth-child(2) {
+    color: var(--orange);
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.awesome > :nth-child(3) {
+    color: var(--gray);
+    font-size: 14px;
+    margin-top: 1rem;
+    margin-bottom: 10rem; /* Add margin here for spacing */
+}
+
+.button {
+    width: 200px;/* Adjust as needed */
+    position: relative; /* Change to avoid conflicts */
+    
+}
+
+/* right side */
+.cards {
+    position: relative;
+}
+
+.cards > * {
+    position: absolute;
+    word-wrap: break-word;
+}
+
+/* blur */
+.s-blur2 {
+    left: 14rem;
+    top: 8rem;
+}
+
+.s-blur1 {
+    top: 13rem;
+    left: -18rem;
+}
+
+@media screen and (max-width: 480px) {
+    
+
+    .services {
+        display: flex;
+        flex-direction: column;
+        height: 80rem;
+        margin-bottom: -200px;
+        margin-top: 3rem;
+        padding-top: 2rem;
+        padding-left: 0;
+        padding-right: 0; 
+    }
+
+    .awesome {
+        display: flex;
+        flex-direction: row;
+        position: relative;
+        
+    }
+    
+    .awesome > :nth-child(1) {
+        color: var(--black);
+        font-size: 0.5rem;
+        font-weight:500;
+    }
+    
+    .awesome > :nth-child(2) {
+        color: var(--orange);
+        font-size: 20px;
+        font-weight: bold;
+    }
+    
+    .awesome > :nth-child(3) {
+        color: var(--gray);
+        width: 340px;
+        font-size: 10px;
+        margin-top: 1rem;
+        margin-bottom: 30px; /* Add margin here for spacing */
+    }
+
+    .cards {
+        display: flex;
+        flex-direction: column;
+        gap: 17rem;
+        margin-top: 20px;
+    }
+
+    .cards > * {
+        position: static;
+    }
+}
+
+.button{
+    width: 200px !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center;
+    text-decoration: none;
+}
+.no-underline{
+    text-decoration: none;
+}
+
